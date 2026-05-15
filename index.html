@@ -23,6 +23,41 @@
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-    <h2>Hello Iam JS.</h2>
+    <!-- sign In container -->
+    <section class="max-w-lg mx-auto border border-gray-100 rounded-lg shadow-lg p-8 my-20 bg-white">
+        <div class="text-center mb-6">
+            <img class="mx-auto mb-6" src="./assets/github-logo.png" alt="github-logo">
+            <h2 class="text-2xl font-semibold text-[#1F2937] mb-1">GitHub Issues Tracker</h2>
+            <p class="text-sm text-[#64748B]">Sign in to manage your issues</p>
+        </div>
+
+        <div>
+        <fieldset class="fieldset">
+      <label class="label text-lg font-medium text-[#1F2937]">Username</label>
+      <input id="userName" type="text" class="input w-full py-5 rounded-lg" placeholder="Enter Username" />
+      <span class="mb-4 text-[#4A00FF]">Default: admin</span>
+
+      <label class="label text-lg font-medium text-[#1F2937]">Password</label>
+      <input id="password" type="password" class="input w-full py-5 rounded-lg" placeholder="Enter Password" />
+      <span class="text-[#4A00FF]">Default: admin123</span>
+
+      <button id="signIn-btn" class="btn btn-primary font-semibold mt-4 rounded-lg py-5 mb-6">Sign In</button>
+       </fieldset>
+        </div>
+
+        <div class="flex gap-2 items-center mb-6">
+            <hr class="border border-gray-200 w-full">
+            <span class="text-gray-800">OR</span>
+            <hr class="border border-gray-200 w-full">
+        </div>
+
+        <div>
+            <h3 class="text-[#64748B] text-sm text-center mb-2">Demo Credentials:</h3>
+            <div class="bg-[#F8FAFC] p-6 rounded-lg text-center">
+                <p><span class="font-semibold text-[#1F2937]">Username:</span> admin</p>
+                <p><span class="font-semibold text-[#1F2937]">Password:</span> admin123</p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
