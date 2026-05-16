@@ -23,7 +23,8 @@
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-   <header class="border border-gray-200 px-20 py-4">
+    <!-- navbar -->
+   <header class="border border-gray-200 px-20 py-4 mb-16">
     <div class="flex flex-col gap-5 md:flex-row justify-between items-center">
         <div class="flex flex-col md:flex-row items-center gap-2">
             <img class="w-[50px]" src="./assets/github-logo.png" alt="">
@@ -40,6 +41,31 @@
         </div>
     </div>
    </header>
+
+   <main class="w-11/12 mx-auto">
+    <!-- tab-section -->
+    <div class="p-6 shadow-sm border border-gray-100 space-x-2 rounded-lg mb-4">
+        <button id="all-btn" class="btn btn-primary">All</button>
+        <button id="open-btn" class="btn">Open</button>
+        <button id="closed-btn" class="btn">Closed</button>
+    </div>
+
+    <!-- Issues count -->
+     <div class="p-6 shadow-sm border border-gray-100 space-x-2 rounded-lg mb-4 flex flex-col gap-3 md:flex-row justify-between items-center">
+        <div class="flex flex-col text-center md:flex-row md:text-left gap-2 items-center">
+            <img src="./assets/Aperture.png" alt="">
+            <div>
+                <h2 class="text-lg font-semibold text-[#1F2937]"><span id="count-issue">0</span> Issues</h2>
+                <p class="text-[#64748B]">Track and manage your project issues</p>
+            </div>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-circle text-[#00A96E] text-sm"></i> <span class="text-[#1F2937 font-medium] mr-2">Open</span>
+            <i class="fa-solid fa-circle text-[#A855F7] text-sm"></i> <span class="text-[#1F2937 font-medium]">Closed</span>
+        </div>
+     </div>
+   </main>
 
     <script src="./script/home.js"></script>
 </body>
