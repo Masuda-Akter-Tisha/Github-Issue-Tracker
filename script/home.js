@@ -1,3 +1,8 @@
+const priorityStyle = {
+    high :'text-[#EF4444] bg-[#FEECEC]',
+    medium :'text-[#F59E0B] bg-[#FFF6D1]',
+    low :'text-[#9CA3AF] bg-[#EEEFF2]'
+}
 
 const createElement = (array) => {
     const htmlElement = array.map (el => {
@@ -23,6 +28,9 @@ const displayLoadIssues = (issues) => {
 
     issues.forEach (issue => {
         console.log(issue);
+
+        const priorityKey = issue.priority.toLowerCase ();
+        const currentStyle = priorityStyle[priorityKey];
         
         const issueCard = document.createElement ('div');
 
@@ -40,7 +48,7 @@ const displayLoadIssues = (issues) => {
                         ?`<img src="./assets/Open-Status.png" alt=""/>` 
                         :`<img src="./assets/Closed- Status .png" alt=""/>`}
                     </div>
-                    <p class="text-sm font-medium rounded-full px-10 py-2 uppercase text-[#EF4444] bg-[#FEECEC]">${issue.priority}</p>
+                    <p class="text-sm font-medium rounded-full px-4 py-1 uppercase ${currentStyle}">${issue.priority}</p>
                  </div>
 
                 <div>
